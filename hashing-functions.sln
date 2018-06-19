@@ -10,13 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		appveyor.yml = appveyor.yml
 		build.ps1 = build.ps1
 		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7BE04070-8E97-4831-8146-C4531AF4B4DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{31053B37-2BF6-4A26-A128-66AA5B3E32CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHashingFunctions", "test\TestHashingFunctions\TestHashingFunctions.csproj", "{EE3735CA-EAFC-48B4-90D9-7092B825F8F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHashingFunctions", "test\TestHashingFunctions\TestHashingFunctions.csproj", "{EE3735CA-EAFC-48B4-90D9-7092B825F8F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
