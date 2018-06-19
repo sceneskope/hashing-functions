@@ -59,8 +59,7 @@ namespace TestHashingFunctions
             using (var oldHash = Murmur.MurmurHash.Create128(0, true, useX64 ? Murmur.AlgorithmPreference.X64 : Murmur.AlgorithmPreference.X86))
             {
                 var newHashOutput = new byte[16];
-                int newBytesWritten;
-                newHash.TryComputeHash(new System.ReadOnlySpan<byte>(input), new System.Span<byte>(newHashOutput), out newBytesWritten);
+                newHash.TryComputeHash(new System.ReadOnlySpan<byte>(input), new System.Span<byte>(newHashOutput), out int newBytesWritten);
                 var oldHashOutput = oldHash.ComputeHash(input);
 
                 var newHashOutputOldStyle = newHash.ComputeHash(input);
@@ -69,6 +68,5 @@ namespace TestHashingFunctions
                 Assert.Equal(oldHashOutput, newHashOutputOldStyle);
             }
         }
-
     }
 }
