@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
+#pragma warning disable EPS06 // Hidden struct copy operation
 namespace SceneSkope.HashingFunctions
 {
     public sealed class Murmur128X86 : Murmur128
@@ -252,3 +253,4 @@ namespace SceneSkope.HashingFunctions
         }
     }
 }
+#pragma warning restore EPS06 // Hidden struct copy operation
